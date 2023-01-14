@@ -1,0 +1,108 @@
+@media only screen and (min-width: 0px) {
+  html body {
+    background-color: rgb(230, 242, 243);
+  }
+  html body header div#bannerANDlogo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: initial;
+    position: relative;
+  }
+  html body header div#bannerANDlogo div#logoHolder {
+    position: relative;
+    height: 15vh;
+  }
+  html body main {
+    background-image: url("../images/Keepers/Numb16.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding-top: 15vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+  html body main div#filter {
+    background-color: rgba(230, 242, 243, 0.75);
+    width: 100%;
+  }
+  html body main div#filter div#pageLabel {
+    margin-top: 15vh;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+  }
+  html body main div#filter div#content {
+    margin: 0 auto 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main div#filter div#content p {
+    width: 15rem;
+    margin: 2.5rem auto;
+    padding: 5rem 0;
+    background-color: rgba(53, 113, 181, 0.5);
+    border-radius: 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main div#filter div#content p i {
+    font-size: 5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  html body main div#filter div#content p i:hover,
+html body main div#filter div#content p i:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body main div#filter div#content p:hover,
+html body main div#filter div#content p:active {
+    background-color: rgba(53, 113, 181, 0.75);
+  }
+}
+@media only screen and (min-width: 760px) {
+  html body main {
+    background-image: url("../images/Keepers/Numb21.webp");
+  }
+  html body main div#filter div#content p {
+    width: 25rem;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html body header div#bannerANDlogo div#logoHolder {
+    height: 17.5vh;
+  }
+  html body main {
+    margin: 0;
+    padding-top: 17.5vh;
+  }
+  html body main div#filter div#content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2.5rem auto 5rem auto;
+    width: 80%;
+  }
+  html body main div#filter div#content p {
+    margin: 0;
+    width: 45%;
+    line-height: 1.75rem;
+  }
+  html body main div#filter div#content figure {
+    width: 30%;
+  }
+}/*# sourceMappingURL=contact.css.map */

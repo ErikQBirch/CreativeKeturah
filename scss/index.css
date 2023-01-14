@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 0px) {
+  html body {
+    background-color: rgb(230, 242, 243);
+  }
+  html body header div#bannerANDlogo {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  html body header div#bannerANDlogo div#logoHolder {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-self: end;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: rgba(53, 113, 181, 0.75);
+    padding: 1rem 0;
+    z-index: 1;
+    width: 100%;
+  }
+  html body header div#bannerANDlogo div#logoHolder img#logo {
+    width: 10rem;
+  }
+  html body header div#bannerANDlogo img#banner {
+    width: 200%;
+  }
+  html body nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+  }
+  html body nav ul {
+    width: 17.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  html body nav ul li {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+  html body nav ul li a:link,
+html body nav ul li a:visited {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  html body nav ul li a:hover {
+    color: rgb(0, 81, 255);
+  }
+  html body nav ul li a:active {
+    color: rgb(125, 50, 255);
+  }
+  html body i#scrollUp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  html body i#scrollUp:hover {
+    color: rgba(0, 81, 255, 0.5);
+  }
+}
+@media only screen and (min-width: 760px) {
+  html body header div#bannerANDlogo img#banner {
+    margin-top: 17.5vw;
+  }
+  html body nav ul {
+    width: 25rem;
+  }
+  html body nav ul li {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html body header div#bannerANDlogo {
+    height: 35rem;
+  }
+  html body header div#bannerANDlogo div#logoHolder img#logo {
+    width: 15rem;
+  }
+  html body nav ul {
+    width: 40rem;
+  }
+}/*# sourceMappingURL=index.css.map */
