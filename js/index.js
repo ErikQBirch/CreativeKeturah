@@ -35,16 +35,18 @@ export const indexContent = {
   },
   getPathAdjuster: function(
     url = window.location.href,
-    isIndex = false,
+    isIndex = true,
     pathAdjuster = ["","pages/"]
   ){
 
-    if (url.includes('index') || url.includes('home')){
-      isIndex = true;
+    if (url.includes('about') || url.includes('contact')){
+      isIndex = false;
     }
+
     if (isIndex == false){
       pathAdjuster = ["../",""];
     }
+    console.log(pathAdjuster);
   return pathAdjuster;
   },
   nav: function(
